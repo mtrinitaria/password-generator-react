@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, ReactComponent } from 'react'
 import './App.scss'
-import ItemLayer from './ItemLayer'
+import { ReactComponent as Logo } from './logo.svg'
 import { Button, Divider, Container, Grid, Input } from '@mui/material/'
 /* 
 const LETTERS = 'abcdefghijklmnopqrstuvwxyz';
@@ -210,7 +210,8 @@ function App() {
           <h1>Password Generator</h1>
         </Grid>
         <Grid item>
-          <img src='/1.svg' />
+          {/* <img src={Logo} /> */}
+          <Logo />
         </Grid>
       </Grid>
       <Divider sx={{ my: '2rem' }} />
@@ -308,6 +309,19 @@ function App() {
         <em>
           The generated password has at least 1 each of lowercase letter,
           uppercase letter, number and symbol
+        </em>
+      </p>
+      <p className='info'>
+        <em>
+          Repository codes can be found here in my{' '}
+          <a
+            href='https://github.com/mtrinitaria/password-generator-react'
+            target='_blank'
+            title='Mykhel Trinitaria Github'
+          >
+            Github
+          </a>
+          .
         </em>
       </p>
     </Container>
