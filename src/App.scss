@@ -1,0 +1,19 @@
+.layers {
+  align-items: center;
+  justify-content: center;
+
+  .layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+.info {
+  text-align: center;
+}
