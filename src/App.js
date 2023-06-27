@@ -130,7 +130,7 @@ console.log(group0, group1, count1, count2)
 function App() {
   const LETTERS = 'abcdefghijklmnopqrstuvwxyz'
   const NUMBERS = '1234567890'
-  const SYMBOLS = '!@#$%^&*()'
+  const SYMBOLS = '.@$!%*#?&><)(^-_'
   const ALLCHAR = LETTERS + LETTERS.toUpperCase() + NUMBERS + SYMBOLS
 
   const randomizeArray = (arr) => {
